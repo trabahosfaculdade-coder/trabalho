@@ -48,7 +48,7 @@
                         <button onclick="scrollToAgendamento()" class="bg-white text-blue-600 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-colors">
                             Agendar Consulta
                         </button>
-                        <button class="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-blue-600 transition-colors">
+                        <button onclick="scrollToServicos()" class="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-blue-600 transition-colors">
                             Nossos Serviços
                         </button>
                     </div>
@@ -407,6 +407,12 @@
     <script>
         function scrollToAgendamento() {
             document.getElementById('agendamento').scrollIntoView({ 
+                behavior: 'smooth' 
+            });
+        }
+
+        function scrollToServicos() {
+            document.getElementById('servicos').scrollIntoView({ 
                 behavior: 'smooth' 
             });
         }
